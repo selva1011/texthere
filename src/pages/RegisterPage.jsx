@@ -100,7 +100,7 @@ const RegisterPage = () => {
     <section className=" w-full px-8 ">
       <div className="h-screen flex items-center justify-center ">
         <div className="border-2 border-gray-300 rounded-2xl p-5  w-96 bg-back-1">
-          <h1 className="text-2xl font-bold text-gray-700 mb-6 text-center">CREATE A PROFILE</h1>
+          <h1 className="text-2xl font-bold text-gray-700 mb-6 text-center hover:cursor-default	">CREATE A PROFILE</h1>
           <form
             onSubmit={handlesubmit}
             action=""
@@ -151,13 +151,13 @@ const RegisterPage = () => {
             </span>
             <input
               type="submit"
-              className="hover:bg-green-400 bg-green-500 text-white text-sm font-bold rounded-2xl w-full py-3 mt-2 border-b-4 border-b-green-600 text-center"
+              className="hover:bg-green-400 bg-green-500 text-white text-sm font-bold rounded-2xl w-full py-3 mt-2 border-b-4 border-b-green-600 text-center hover:cursor-pointer"
               value="Create Account"
             />
           </form>
           <div className="flex gap-1 font-bold py-2 justify-center items-center">
-            <h1 className="text-black">Already have an account?</h1>
-            <Link className="hover:text-sky-400 text-sky-500" to="/login">
+            <h1 className="text-black hover:cursor-default">Already have an account?</h1>
+            <Link className="hover:text-sky-400 text-sky-500 hover:cursor-pointer" to="/login">
               Sign in
             </Link>
           </div>
