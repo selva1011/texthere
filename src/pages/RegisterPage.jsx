@@ -14,6 +14,7 @@ const RegisterPage = () => {
   };
 
   const [errors, setErrors] = useState(initialStateErrors);
+  const [loading, setLoading] = useState(false);
 
   const handlesubmit = (event) => {
     event.preventDefault();
@@ -56,6 +57,7 @@ const RegisterPage = () => {
     }
 
     if (!hasError) {
+      setLoading(true)
       RegisterApi(inputs)
         .then((response) => {
           storeUserData(response.data.idToken);
@@ -76,7 +78,9 @@ const RegisterPage = () => {
           }
           console.log(err.response.data.error.message);
         })
-        .finally();
+        .finally(() => {
+          setLoading(false)
+        });
     }
   };
 
@@ -149,6 +153,7 @@ const RegisterPage = () => {
                 <p className="text-sm text-red-600">{errors.custom_error}</p>
               ) : null}
             </span>
+            {loading ? <span>loading..</span> : null}
             <input
               type="submit"
               className="hover:bg-green-400 bg-green-500 text-white text-sm font-bold rounded-2xl w-full py-3 mt-2 border-b-4 border-b-green-600 text-center hover:cursor-pointer"

@@ -1,10 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.adobe.com/fonts/din-2014-rounded-variable');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .font-example {
     font-family: "din-2014-rounded-variable",sans-serif;
