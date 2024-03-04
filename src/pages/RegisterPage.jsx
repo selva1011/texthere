@@ -162,7 +162,7 @@ const RegisterPage = () => {
           </form>
           <div className="flex gap-1 font-bold py-2 justify-center items-center">
             <h1 className="text-black hover:cursor-default">Already have an account?</h1>
-            <Link className="hover:text-sky-400 text-sky-500 hover:cursor-pointer" to="/login">
+            <Link className="hover:text-sky-400 text-sky-500 hover:cursor-pointer" to="/">
               Sign in
             </Link>
           </div>

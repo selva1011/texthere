@@ -79,17 +79,26 @@ const LoginPage = () => {
   }
 
   return (
-    <section className="bg-back-1 w-full px-8 ">
-      <div className="h-screen flex items-center justify-center ">
-        <div className="border-2 border-gray-300 rounded-2xl p-5  w-96">
-          <h1 className="text-2xl font-bold text-gray-700 mb-6 text-center">Sign In</h1>
+    <section className=" w-full px-8 font-Outfit">
+      <div className="h-screen flex items-center justify-center gap-12 max-md:flex-col">
+        <div className="p-5  w-96">
+          <div>
+            <div className="flex flex-col">
+              <h1 className=" text-6xl font-extrabold font-Righteous leading-0 tracking-widest text-sky-500">TEXTHERE</h1>
+              <p className="text-2xl font-outfit font-medium">TextHere helps you connect 🔌 and share with the people 🫂 in your life.</p>
+            </div>
+          </div>
+        </div>
+        <div className="border-2 border-gray-300 rounded-2xl p-5  w-96 bg-back-1">
+          <h1 className="text-2xl font-bold text-gray-700 mb-6 text-center">
+            Sign In
+          </h1>
           <form
             onSubmit={handlesubmit}
             action=""
             className="flex flex-col px-5 gap-4"
           >
             <div className="flex flex-col gap-1 font-bold">
-              
               <input
                 type="text"
                 className=" text-black text-lg tracking-wide	 font-bold rounded-2xl w-full leading-10 px-4	"
@@ -98,11 +107,12 @@ const LoginPage = () => {
                 name="email"
               />
               {errors.email.required ? (
-                <span className="text-sm text-red-600">* Email is required.</span>
+                <span className="text-sm text-red-600">
+                  * Email is required.
+                </span>
               ) : null}
             </div>
             <div className="flex flex-col gap-1 font-bold ">
-              
               <input
                 type="password"
                 className=" text-black text-lg tracking-wide	 font-bold rounded-2xl w-full leading-10 px-4	"
@@ -129,7 +139,12 @@ const LoginPage = () => {
           </form>
           <div className="flex flex-col gap-1 font-bold py-2 justify-center items-center mt-1 ">
             <h3 className="text-black">Don't have an account?</h3>
-            <Link className="hover:text-green-400 text-green-500" to="/register">Create a profile</Link>
+            <Link
+              className="hover:text-green-400 text-green-500"
+              to="/register"
+            >
+              Create a profile
+            </Link>
           </div>
         </div>
       </div>
