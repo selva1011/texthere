@@ -106,7 +106,7 @@ const RegisterPage = () => {
       <div className="p-5  w-96">
           <div>
             <div className="flex flex-col max-md:text-center gap-2 text-center">
-              <h1 className=" text-6xl font-extrabold font-Righteous leading-0 tracking-widest text-sky-500">TEXTHERE</h1>
+              <h1 className=" text-6xl font-extrabold font-Righteous leading-0 tracking-widest text-sky-500">TextHere</h1>
               <h5 className="text-4xl font-outfit font-medium " >Join today 🚀</h5>
               <p className="text-2xl font-outfit font-medium ">TextHere helps you connect  and share with the people in your life.</p>
             </div>
