@@ -9,10 +9,10 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/" element={<Welcome />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>

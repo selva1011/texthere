@@ -83,9 +83,9 @@ const LoginPage = () => {
       <div className="h-screen flex items-center justify-center gap-12 max-md:flex-col">
         <div className="p-5  w-96">
           <div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-md:text-center gap-4">
               <h1 className=" text-6xl font-extrabold font-Righteous leading-0 tracking-widest text-sky-500">TEXTHERE</h1>
-              <p className="text-2xl font-outfit font-medium">TextHere helps you connect 🔌 and share with the people 🫂 in your life.</p>
+              <p className="text-2xl font-outfit font-medium">TextHere helps you connect  and share with the people in your life.</p>
             </div>
           </div>
         </div>
