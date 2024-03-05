@@ -75,7 +75,7 @@ const LoginPage = () => {
   };
 
   if (isAuthenticated()) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/dashboard" />;
   }
 
   return (
